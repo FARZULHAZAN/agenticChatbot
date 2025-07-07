@@ -23,7 +23,6 @@ class LoadStreamlitUI:
                 self.user_controls['selected_groq_model'] = st.selectbox('Select Model',model_options)
                 self.user_controls['GROQ_API_KEY'] = st.session_state['GROQ_API_KEY']=st.text_input('API Key',type='password')
             
-            
             self.user_controls['selected_usecase']=st.selectbox('Select Usecase',usecase_options)
         
         return self.user_controls
